@@ -4,11 +4,12 @@ import {BiSearchAlt} from 'react-icons/bi'
 import {TbMessageCircle} from 'react-icons/tb'
 import {MdOutlineNotificationsNone} from 'react-icons/md'
 import {FaRegUserCircle} from 'react-icons/fa'
-import {BsArrowRightShort} from 'react-icons/bs'
+import {BsArrowRightShort,BsQuestionCircle} from 'react-icons/bs'
 
 // import img from './../../../Assets/profile.png'
 import video from '../../../Assets/video.mp4'
-import img2 from '../../../Assets/image1.png'
+import img2 from '../../../Assets/profile1.png'
+import image1 from '../../../Assets/banner.png'
 
 const Top = () => {
   return (
@@ -25,12 +26,12 @@ const Top = () => {
         </div>
 
         <div className="adminDiv">
-          <TbMessageCircle className="icon2" />
-          <MdOutlineNotificationsNone className="icon2" />
-          <FaRegUserCircle className="icon2" />
-          {/* <div className="adminImage">
-            <img src={img} alt="Admin Image" className="profile" />
-          </div> */}
+          <TbMessageCircle className="ico" />
+          <MdOutlineNotificationsNone className="ico" />
+          {/* <FaRegUserCircle className="ico" /> */}
+          <div className="adminImage">
+            <img src={img2} alt="Admin Image" className="profile" />
+          </div>
         </div>
       </div>
 
@@ -73,21 +74,22 @@ const Top = () => {
 
             </div>
 
-            {/* <div className="imgDiv">
-              <img src={img2} alt="Image Name" className='image1' />
-            </div> */}
+            <div className="imgDiv">
+              <img src={image1} alt="Image Name" className='image1' />
+            </div>
 
             
-            {/* <div className="sideBarCard">
-        <BsQuestionCircle className='icon1' />
-        <div className="cardContent">
-          <div className="circle1"></div>
-          <div className="circle2"></div>
+            <div className="sideBarCard1">
+                <BsQuestionCircle className='ico1' />
+              <div className="cardContent">
+                 <div className="circle1"></div>
+                 <div className="circle2"></div>
 
-          <h3 className='head3'>Help Center</h3>
-          <p className='para'>Having trouble in Keshti, please contact us from for more questions.</p>
-          <button className='btn'>Go to help center</button>
-        </div> */}
+                <h3 className='head3'>Help Center</h3>
+                <p className='para'>Having trouble in Keshti, please contact us from for more questions.</p>
+                <button className='btn'>Go to help center</button>
+            </div>
+            </div> 
 
           </div>
         </div>

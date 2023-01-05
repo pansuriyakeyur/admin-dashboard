@@ -16,13 +16,13 @@ const Sidebar = () => {
     
     <div className="sideBar grid">
       <div className="logoDiv flex">
-        <img src={logo} alt="" className="Image Name" />
+        <img src={logo} alt="Image Name" className="logoimg" />
         <h2 className='h2'>Keshti.</h2>
       </div>
 
       <div className="menuDiv">
         <h3 className="divTitle">
-          QUUICK MENU
+          QUICK MENU
         </h3>     
         <ul className="menuLists grid">
 

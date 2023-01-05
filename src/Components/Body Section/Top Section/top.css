@@ -69,19 +69,20 @@
     justify-content: center;
 }
 
-.icon2{
+.ico{
     font-size: var(--biggestFontSize);
     background: var(--whiteColor);
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 6px;
     box-shadow: 0 2px 4px var(--inputColor);
     color: var(--textColor);
 }
 
-/* .adminImage{
+.adminImage{
     border: 3px solid var(--whiteColor);
-    border-radius: 10px;
+    border-radius: 20px;
     width: 2.5rem;
+    height: 2.5rem;
     overflow: hidden;
     box-shadow: 0 2px 4px var(--inputColor);
 }
@@ -90,7 +91,7 @@
         width: 100%;
         height: 100%;
         border-radius: 10px;
-} */
+}
 
 .cardSection{
     margin-top: 3rem;
@@ -180,11 +181,11 @@
 .main::before{
     content: '';
     position: absolute;
-    height: 100%;
-    width: 80%;
+    height: 90%;
+    width: 70%;
     background: var(--palegreen);
     left: 0;
-    bottom: 0;
+    bottom: 9px;
     border-radius: 1rem;
 }
 
@@ -233,4 +234,185 @@
 .image1{
     width: 100%;
     height: 200px;
+}
+
+.sideBarCard1{
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+
+}
+
+    .ico1{
+        position: absolute;
+        background: var(--HoverColor);
+        border: 10px solid var(--whiteColor);
+        font-size: 3rem;
+        border-radius: 50%;
+        top: -8px;
+        right: 50%;
+        transform: translate(50%);
+        z-index: 100;
+    }
+
+    .cardContent{
+
+        position: relative;
+        padding: 1rem;
+        background: var(--HoverColor);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+        .head3{
+        font-size: var(--h3FontSize);
+        margin-top: 1rem;
+        padding: 1rem 0;
+        font-weight: 800;
+        color: var(--blackColor);
+        }
+
+        .para{
+            font-size: var(--normalFontSize);
+            color: var(--textColor);
+            padding-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .btn_card{
+            position: relative;
+            color: var(--textColor);
+            z-index: 1000;
+        }
+
+        .circle1, .circle2{
+            position: absolute;
+            background: var(--palegreen);
+            border-radius: 50%;
+            opacity: .7;
+        }
+        
+        .circle1{
+            height: 100px;
+            width: 100px;
+            top: -50px;
+            left: -50px;
+        }
+
+        .circle2{
+            height: 150px;
+            width: 150px;
+            bottom: -80px;
+            right: -70px;
+            z-index: 1;
+        }
+
+
+/* Media Query  */
+
+@media screen and (max-width: 900px) {
+
+    .cardSection{
+        flex-direction: column;
+    }
+
+    .rightCard, .leftCard{
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .leftCard{
+        margin-top: 2rem;
+        align-self: flex-start;
+        height: 10px !important;
+    }
+
+    .sideBarCard1{
+        display: block !important;
+    }
+    
+}
+
+
+@media screen and (max-width: 918px) {
+
+        .searchBar{
+            display: none;
+        }
+}
+
+@media screen and (max-width: 725px) {
+
+    .main{
+            width: 100%;
+    }
+
+    .sideBarCard1{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    .adminDiv{
+        display: none;
+    }
+
+    .title{
+        text-align: center;
+        margin: auto;
+    }
+
+    .rightCard{
+        text-align: center;
+    }
+
+    .buttons{
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textDiv{
+        margin: auto;
+    }
+
+    .main::before{
+        width: 100% !important;
+    }
+
+    .imgDiv{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .rightCard{
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .head1{
+        font-size: var(--h2FontSize);
+    }
+
+    .head2{
+        font-size: var(--h2FontSize);
+    }
+
+    .head3{
+        font-size: var(--h2FontSize);
+    }
+
 }
